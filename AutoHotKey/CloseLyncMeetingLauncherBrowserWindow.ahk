@@ -3,6 +3,9 @@
 ; Shift key    +
 ; Windows key  # 
 
+SetTitleMatchMode, 2
+SetTitleMatchMode, Slow
+
 SetTimer,EVERY_SECOND,1000
 
 EVERY_SECOND:  

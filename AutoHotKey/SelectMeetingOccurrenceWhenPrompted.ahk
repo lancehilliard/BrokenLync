@@ -8,7 +8,7 @@ SetTimer,EVERY_SECOND,1000
 
 EVERY_SECOND:
 	; Select the default option of the "Open Recurring Item" dialog
-	if WinActive("Open Recurring Item", "Do you want to open only this occurrence or the series?")
+	if WinActive("Open Recurring Item")
     		send, {Enter}
 
 	; Update the script if it has changed

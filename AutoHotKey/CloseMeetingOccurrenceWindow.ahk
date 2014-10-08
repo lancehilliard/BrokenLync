@@ -11,8 +11,8 @@ SetTimer,EVERY_SECOND,1000
 EVERY_SECOND:
 	; Close Meeting Occurrence window if it's in the background while IM window is in foreground
 	if WinActive("ahk_class LyncConversationWindowClass")
-	if !WinActive(" - Meeting Occurrence")
-    		WinClose, - Meeting Occurrence
+	if !WinActive(" - Meeting")
+    		WinClose, - Meeting
 
 	; Update the script if it has changed
 	FileGetAttrib,attribs,%A_ScriptFullPath%
